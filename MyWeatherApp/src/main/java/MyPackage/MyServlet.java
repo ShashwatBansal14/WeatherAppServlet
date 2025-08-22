@@ -44,7 +44,7 @@ public class MyServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//API Key
-		String apiKey = "3e8ef3330af93431a200db84541ae152";
+		String apiKey = "Your API Key";
 		// Get the city from the form input
         String city = request.getParameter("city"); 
 
@@ -108,4 +108,5 @@ public class MyServlet extends HttpServlet {
         // Forward the request to the weather.jsp page for rendering
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
+
 }
